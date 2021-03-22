@@ -1,3 +1,4 @@
+#include <fun.h>
 #include <math.h>
 #include <ctype.h>
 
