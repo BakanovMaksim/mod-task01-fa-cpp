@@ -1,4 +1,4 @@
-#include "fun.h"
+#include "..\include\fun.h"
 
 int main()
 {

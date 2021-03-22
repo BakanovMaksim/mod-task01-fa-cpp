@@ -1,7 +1,3 @@
-#include <fun.h>
-#include <math.h>
-#include <ctype.h>
-
 unsigned int faStr1(const char *str)
 {
     int index = 0;
@@ -15,12 +11,12 @@ unsigned int faStr1(const char *str)
         {
             inWord = true;
 
-            if (isdigit(str[index]))
+            if((str[index] >= 48) && (str[index] <= 57))
             {
                 isNumber = true;
             }
         }
-        else if ((str[index] != ' ') && inWord && isdigit(str[index]))
+        else if ((str[index] != ' ') && inWord && (str[index] >= 48 && str[index] <= 57))
         {
             isNumber = true;
         }
@@ -107,5 +103,7 @@ unsigned int faStr3(const char *str)
         index++;
     }
 
-    return round(countSymbolsWords/count);
+    double result = countSymbolsWords/count;
+
+    return (result > 0.0) ? (result + 0.5) : (result - 0.5);
 }
