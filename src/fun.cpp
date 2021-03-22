@@ -1,6 +1,5 @@
-#include <cmath.h>
+#include <math.h>
 #include <ctype.h>
-#include "fun.h"
 
 unsigned int faStr1(const char *str)
 {
@@ -15,12 +14,12 @@ unsigned int faStr1(const char *str)
         {
             inWord = true;
 
-            if (isDigit(str[index]))
+            if (isdigit(str[index]))
             {
                 isNumber = true;
             }
         }
-        else if ((str[index] != ' ') && inWord && isDigit(str[index]))
+        else if ((str[index] != ' ') && inWord && isdigit(str[index]))
         {
             isNumber = true;
         }
