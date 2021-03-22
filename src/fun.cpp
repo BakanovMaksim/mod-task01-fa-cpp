@@ -41,8 +41,8 @@ unsigned int faStr2(const char *str)
     int index = 0;
     int count = 0;
     bool inWord = false;
-    isUpperSymbol = false;
-    isLowerSymbol = true;
+    bool isUpperSymbol = false;
+    bool isLowerSymbol = true;
 
     while(str[index] != '\0')
     {
